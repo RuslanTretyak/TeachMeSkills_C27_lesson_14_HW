@@ -1,8 +1,13 @@
+import service.Service;
+
 import java.io.File;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        File file = new File("D:\\Java\\HW14\\TeachMeSkills_C27_lesson_14_HW\\fileForProcessing.txt");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("введите путь к файлу");
+        File file = new File(scanner.next()); //  src\\fileForProcessing.txt
         Service.processFile(file);
     }
 }
